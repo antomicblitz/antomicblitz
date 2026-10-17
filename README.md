@@ -2,14 +2,6 @@
 
 Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com). I'm not a trained software engineer. Agents write the code, but I take the ownership. I decide what it has to prove, how the pieces fit, and what has to pass before it counts as finished.
 
-Just because I'm not a formally trained software developer doesn't mean that I produce shitty AI slop. I don't trust agent-generated code just because it runs. Every repository has quality gates designed to catch defects, unsafe changes, and shallow implementations. CI enforces those checks. For instance:
-
-- `ruff` and `pyright` with tests treated as first-class code
-- `pytest` with coverage, plus branch coverage on changed files
-- cognitive-complexity limits and mutation testing on changed code
-- `bandit`, secret scanning, `actionlint`, `markdownlint`
-- actions pinned to commit SHAs
-
 ### Current focus
 
 - Building [Lambda Biolab](https://www.lambconsulting.bio/lambda-biolab), a BSL-1 shared lab and open
@@ -42,7 +34,15 @@ Just because I'm not a formally trained software developer doesn't mean that I p
 - [**biolab-runners**](https://github.com/Lambda-Biolab/biolab-runners): modular runners for
   Boltz-2 structure prediction and OpenMM MD.
 
+### Code quality, and a note to haters
 
+Just because I didn't formally study software development doesn't mean that I blindly trust all agent-generated code. I dislike low-effort vibe slop as much as the next person. But let's be real, it is impossible to review a 2000+ line diff and those that pretend to do so are delusional. Nonetheless, I strive to ship robust, working software that I feel confident that my collaborators can confidently use, not some shitty vibe-coded slop. Every repository has quality gates designed to catch most obvious defects, unsafe changes, and shallow implementations. For instance:
+
+- `ruff` and `pyright` with tests treated as first-class code
+- `pytest` with coverage, plus branch coverage on changed files
+- cognitive-complexity limits and mutation testing on changed code
+- `bandit`, secret scanning, `actionlint`, `markdownlint`
+- actions pinned to commit SHAs
 
 ### How to reach me
 
