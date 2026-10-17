@@ -1,6 +1,14 @@
 # Antonio Lamb
 
-Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com).
+Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com). I'm not a trained software engineer, and I write most of my code with AI agents. The part I do myself is deciding what the software has to prove, designing the interfaces, and refusing to call it done until the proof runs.
+
+Although I am not perfect and do make mistakes as I learn, every one of my repos carries quality gates to minimize the chances of shitty AI slop, and CI mirrors it. For instance:
+
+- F`ruff` and `pyright` with tests treated as first-class code
+- `pytest` with coverage, plus branch coverage on changed files
+- cognitive-complexity limits and mutation testing on changed code
+- `bandit`, secret scanning, `actionlint`, `markdownlint`
+- actions pinned to commit SHAs
 
 ### Current focus
 
@@ -34,20 +42,7 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 - [**biolab-runners**](https://github.com/Lambda-Biolab/biolab-runners): modular runners for
   Boltz-2 structure prediction and OpenMM MD.
 
-### How I build
 
-I'm a molecular biologist, not a trained software engineer, and I write most of my code
-with AI agents. The part I do myself is the part agents are bad at: deciding what the
-software has to prove, designing the interfaces, and refusing to call it done until the
-proof runs.
-
-Although I am not perfect and do make mistakes as I learn, every one of my repos carries quality gates to minimize the chances of shitty AI slop, and CI mirrors it. For instance:
-
-- F`ruff` and `pyright` with tests treated as first-class code
-- `pytest` with coverage, plus branch coverage on changed files
-- cognitive-complexity limits and mutation testing on changed code
-- `bandit`, secret scanning, `actionlint`, `markdownlint`
-- actions pinned to commit SHAs
 
 ### How to reach me
 
