@@ -1,6 +1,6 @@
 # Antonio Lamb
 
-Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com). I'm not a trained software engineer. Agents write the code, but I take the ownership. I decide what it has to prove, how the pieces fit, and what has to pass before it counts as finished..
+Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com). I'm not a trained software engineer. Agents write the code, but I take the ownership. I decide what it has to prove, how the pieces fit, and what has to pass before it counts as finished.
 
 Although I am not perfect and do make mistakes as I learn, every one of my repos carries quality gates to minimize the chances of shitty AI slop, and CI mirrors it. For instance:
 
