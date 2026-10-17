@@ -36,7 +36,7 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 
 ### Code quality, and a note to haters
 
-Just because I didn't formally study software development doesn't mean that I blindly trust all agent-generated code. I dislike low-effort vibe slop as much as the next person. But let's be real, it is impossible to review a 2000+ line diff and those that pretend to do so are delusional. Nonetheless, I strive to ship robust, working software that I feel confident that my collaborators can confidently use, not some shitty vibe-coded slop. Every repository has quality gates designed to catch most obvious defects, unsafe changes, and shallow implementations. For instance:
+Just because I didn't formally study software development doesn't mean that I blindly trust all agent-generated code. I dislike low-effort vibe slop as much as the next person. But let's be real, it is impossible to review a 2000+ line diff and those that pretend to do so are delusional. Nonetheless, I strive to ship robust, working software that I feel confident my collaborators and I can use. Every repository has quality gates designed to catch most obvious defects, unsafe changes, and shallow implementations. For instance:
 
 - `ruff` and `pyright` with tests treated as first-class code
 - `pytest` with coverage, plus branch coverage on changed files
