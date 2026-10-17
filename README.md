@@ -1,19 +1,18 @@
 # Antonio Lamb
 
-DIY Molecular biologist and entrepreneur in Basel. My interests include open source lab automation, agentic lab hardware automation and drug discovery. I work on opensource instrument drivers and bioinformatics tools. 
+Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make opensource instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](www.sp2tx.com).
 
 ### Current focus
 
 - Building [Lambda Biolab](www.lambconsulting.bio/lambda-biolab), a BSL-1 shared lab and open
   tooling for bioengineering, since 2022.
-- Building peptide drug discovery pipelines for [SP2TX](www.sp2tx.com)
 - Reverse-engineering lab instruments into open Python APIs, from PCR machines to plate
   readers to electronic pipettes.
 - Running local LLM inference and agent tooling for wet-lab workflows.
 
 ### Projects I'm working on
 
-**Variant calling on small hardware**
+**Affordable, low-cost, distributed computing in genomics and structural biology
 
 - [**deepvariant-linux-arm64**](https://github.com/Lambda-Biolab/deepvariant-linux-arm64):
   Google's DeepVariant, rebuilt to run on cheap Arm64 processors.
@@ -34,8 +33,6 @@ DIY Molecular biologist and entrepreneur in Basel. My interests include open sou
 
 - [**biolab-runners**](https://github.com/Lambda-Biolab/biolab-runners): modular runners for
   Boltz-2 structure prediction and OpenMM MD.
-
-
 
 ### How to reach me
 
