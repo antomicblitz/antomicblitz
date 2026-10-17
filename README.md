@@ -4,7 +4,7 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 
 Although I am not perfect and do make mistakes as I learn, every one of my repos carries quality gates to minimize the chances of shitty AI slop, and CI mirrors it. For instance:
 
-- F`ruff` and `pyright` with tests treated as first-class code
+- `ruff` and `pyright` with tests treated as first-class code
 - `pytest` with coverage, plus branch coverage on changed files
 - cognitive-complexity limits and mutation testing on changed code
 - `bandit`, secret scanning, `actionlint`, `markdownlint`
