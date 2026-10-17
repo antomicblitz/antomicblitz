@@ -1,10 +1,10 @@
 # Antonio Lamb
 
-Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make opensource instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](www.sp2tx.com).
+Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automation and drug discovery. I make open-source instrument drivers and bioinformatics tools that I use in my work and my own lab. I also help build peptide drug discovery pipelines for myself and [SP2TX](https://www.sp2tx.com).
 
 ### Current focus
 
-- Building [Lambda Biolab](www.lambconsulting.bio/lambda-biolab), a BSL-1 shared lab and open
+- Building [Lambda Biolab](https://www.lambconsulting.bio/lambda-biolab), a BSL-1 shared lab and open
   tooling for bioengineering, since 2022.
 - Reverse-engineering lab instruments into open Python APIs, from PCR machines to plate
   readers to electronic pipettes.
@@ -12,7 +12,7 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 
 ### Projects I'm working on
 
-**Affordable, low-cost, distributed computing in genomics and structural biology
+**Affordable, low-cost, distributed computing in genomics and structural biology**
 
 - [**deepvariant-linux-arm64**](https://github.com/Lambda-Biolab/deepvariant-linux-arm64):
   Google's DeepVariant, rebuilt to run on cheap Arm64 processors.
@@ -27,12 +27,32 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 - [**dpette-usb-driver**](https://github.com/Lambda-Biolab/dpette-usb-driver): open USB
   driver for DLAB dPette electronic pipettes.
 - [**i3mega-pipettebot**](https://github.com/Lambda-Biolab/i3mega-pipettebot): an Anycubic
-  i3 Mega turned into a sub-$150 disposable-tip pipetting robot. (collaboration with [**qte77**](https://github.com/qte77]))
+  i3 Mega turned into a sub-$150 disposable-tip pipetting robot (collaboration with [**qte77**](https://github.com/qte77)).
 
 **Structure prediction**
 
 - [**biolab-runners**](https://github.com/Lambda-Biolab/biolab-runners): modular runners for
   Boltz-2 structure prediction and OpenMM MD.
+
+### How I build
+
+I'm a molecular biologist, not a trained software engineer, and I write most of my code
+with AI agents. The part I do myself is the part agents are bad at: deciding what the
+software has to prove, designing the interfaces, and refusing to call it done until the
+proof runs.
+
+Every repo carries a `make validate` gate, and CI mirrors it:
+
+- `ruff` and `pyright` across `src/` and `tests/`, with tests treated as first-class code
+- `pytest` with coverage, plus branch coverage on changed files
+- cognitive-complexity limits and mutation testing on changed code
+- `bandit`, secret scanning, `actionlint`, `markdownlint`
+- actions pinned to commit SHAs, so a green build means the same thing next month
+
+I'd rather be measured than believed. When a faster native Apple Silicon DeepVariant port
+landed upstream, I benchmarked it against mine (2.8x faster, same F1), posted the result to
+the [maintainers](https://github.com/google/deepvariant/issues/1090), and archived my own
+fork. The repos that remain are the ones that kept passing.
 
 ### How to reach me
 
