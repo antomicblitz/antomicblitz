@@ -41,18 +41,13 @@ with AI agents. The part I do myself is the part agents are bad at: deciding wha
 software has to prove, designing the interfaces, and refusing to call it done until the
 proof runs.
 
-Every repo carries a `make validate` gate, and CI mirrors it:
+Although I am not perfect and do make mistakes as I learn, every one of my repos carries quality gates to minimize the chances of shitty AI slop, and CI mirrors it. For instance:
 
-- `ruff` and `pyright` across `src/` and `tests/`, with tests treated as first-class code
+- F`ruff` and `pyright` with tests treated as first-class code
 - `pytest` with coverage, plus branch coverage on changed files
 - cognitive-complexity limits and mutation testing on changed code
 - `bandit`, secret scanning, `actionlint`, `markdownlint`
-- actions pinned to commit SHAs, so a green build means the same thing next month
-
-I'd rather be measured than believed. When a faster native Apple Silicon DeepVariant port
-landed upstream, I benchmarked it against mine (2.8x faster, same F1), posted the result to
-the [maintainers](https://github.com/google/deepvariant/issues/1090), and archived my own
-fork. The repos that remain are the ones that kept passing.
+- actions pinned to commit SHAs
 
 ### How to reach me
 
