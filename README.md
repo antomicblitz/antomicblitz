@@ -36,7 +36,7 @@ Molecular biologist and entrepreneur in Basel. I'm working on agentic lab automa
 
 ### Code quality, and a note to haters
 
-Just because I didn't formally study software development doesn't mean that I blindly trust all agent-generated code. I dislike low-effort vibe slop as much as the next person, but manually reviewing thousands of lines of agent-generated code doesn't scale, and pretending that line-by-line inspection alone guarantees correctness is misguided. Nonetheless, I strive to ship robust, working software that I feel confident my collaborators and I can use. Every repository has quality gates designed to catch most obvious defects, unsafe changes, and shallow implementations. For instance:
+I don't get the idiotic elitist takes from a lot of developers who block any AI generated code at all. Slop can come from humans too, so it doesn't really matter who produces it. Judge contributions by their **quality**, not whether they are AI-generated. I strive to ship robust, working software that I feel confident my collaborators and I can use. Even if I don't understand how every component works, I have taken the time to validate the **behavior**. Every repository has quality gates designed to catch most obvious defects, unsafe changes, and shallow implementations. For instance:
 
 - `ruff` and `pyright` with tests treated as first-class code
 - `pytest` with coverage, plus branch coverage on changed files
